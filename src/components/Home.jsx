@@ -46,6 +46,16 @@ function Home() {
         window.onbeforeunload = null;
       };
     }, []);
+
+    useEffect(() => {
+      const scrollToBottom = () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      };
+  
+      const timeoutId = setTimeout(scrollToBottom, 3500);
+  
+      return () => clearTimeout(timeoutId);
+    }, []);
   
     return (
       <div className='container'>
@@ -58,9 +68,9 @@ function Home() {
         </div>
         <div className='dark-section'>
           <div className={`bottom-text ${isWhiteTextVisible ? 'visible' : ''}`}>
-            <span className='bottom-text-body'>I am a front end developer.</span>
-            <span className='bottom-text-body second-sequence'>Specializing in react.</span>
-            <span className='bottom-text-body third-sequence'>Check me out!</span>
+            <span className='bottom-text-body'>I'm a front end developer.</span>
+            <span className='bottom-text-body second-sequence'>I work primarily with react.</span>
+            <span className='bottom-text-body third-sequence'>Welcome to my portfolio :-)</span>
           </div>
         </div>
       </div>
