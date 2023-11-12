@@ -1,16 +1,20 @@
-.container {
+  .container {
     position: relative;
     width: 100%;
     height: 200vh;
     overflow: hidden;
   }
+
+  .container a {
+    text-decoration: none;
+  }
   
-.light-section {
+  .light-section {
     height: 100vh;
     background-color: white;
   }
 
-.top-text {
+  .top-text {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -25,7 +29,7 @@
     transition: opacity 0.5s ease;
   }
 
-.hand-icon {
+  .hand-icon {
     margin-top: 12px;
     height: 64px;
     width: 64px;
@@ -36,7 +40,7 @@
     animation-iteration-count: infinite;
   }
 
-@keyframes rotateAnimation {
+  @keyframes rotateAnimation {
     0% {
       transform: rotate(-30deg);
     }
@@ -57,7 +61,7 @@
     }
   }
   
-.dark-section {
+  .dark-section {
     position: fixed;
     top: 0;
     right: 0;
@@ -68,7 +72,7 @@
     transition: opacity 0.5s ease;
   }
 
-.bottom-text {
+  .bottom-text {
     display: none;
     position: absolute;
     bottom: 41%;
@@ -78,34 +82,43 @@
     color: white;
     font-size: 1.5rem;
     transition: opacity 0.5s ease;
+    pointer-events: none;
   }
 
   
-.second-sequence {
+  .second-sequence {
     opacity: 0;
     transition: opacity 0.5s ease;
     animation: fadeIn 0.5s ease 1.5s forwards;
   }
   
-.third-sequence {
+  .third-sequence {
     opacity: 0;
     transition: all 0.5s ease;
     animation: fadeIn 0.5s ease 3s forwards;
   }
+
+  .fourth-sequence {
+    opacity: 0;
+    transition: all 0.5s ease;
+    animation: fadeIn 0.5s ease 4.5s forwards;
+    pointer-events: none;
+  }
   
-@keyframes fadeIn {
+  @keyframes fadeIn {
     to {
       opacity: 1;
+      pointer-events: all;
     }
   }
 
-.visible {
+  .visible {
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 1;
   }
 
-.invisible {
+  .invisible {
     opacity: 0;
   }
