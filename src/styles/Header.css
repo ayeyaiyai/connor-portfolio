@@ -32,6 +32,7 @@
     cursor: pointer;
     position: relative;
     color: white;
+    text-decoration: none;
 }
 
 .header-link:before {
