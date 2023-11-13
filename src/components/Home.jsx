@@ -52,7 +52,7 @@ function Home() {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       };
   
-      const timeoutId = setTimeout(scrollToBottom, 4000);
+      const timeoutId = setTimeout(scrollToBottom, 2000);
   
       return () => clearTimeout(timeoutId);
     }, []);
@@ -71,6 +71,9 @@ function Home() {
             <span className='bottom-text-body'>I'm a front end developer.</span>
             <span className='bottom-text-body second-sequence'>I work primarily with react.</span>
             <span className='bottom-text-body third-sequence'>Welcome to my portfolio :-)</span>
+            <div className='bottom-text-body fourth-sequence home-links'>
+              <a className='home-link'>Email</a> | <a href='https://drive.google.com/file/d/1OZI3lyE0pU8JfYFhNrC_WS27ssrKd8G8/view' className='home-link'>Resume</a> | <a href='https://www.linkedin.com/in/connor-gilbert-21b3a3268/' className='home-link'>LinkedIn</a>
+            </div>
           </div>
         </div>
       </div>
