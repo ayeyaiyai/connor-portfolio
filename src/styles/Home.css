@@ -38,6 +38,7 @@
     animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-delay: .5s;
   }
 
   @keyframes rotateAnimation {
@@ -96,13 +97,6 @@
     opacity: 0;
     transition: all 0.5s ease;
     animation: fadeIn 0.5s ease 3s forwards;
-  }
-
-  .fourth-sequence {
-    opacity: 0;
-    transition: all 0.5s ease;
-    animation: fadeIn 0.5s ease 4.5s forwards;
-    pointer-events: none;
   }
   
   @keyframes fadeIn {

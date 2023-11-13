@@ -17,11 +17,6 @@
     width: 85%;
 }
 
-.header-name {
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-
 .header-links {
     font-size: 1.45rem;
     font-weight: 400;
@@ -33,6 +28,12 @@
     position: relative;
     color: white;
     text-decoration: none;
+}
+
+.header-name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-left: 0px;
 }
 
 .header-link:before {
