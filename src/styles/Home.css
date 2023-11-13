@@ -76,7 +76,7 @@
   .bottom-text {
     display: none;
     position: absolute;
-    bottom: 41%;
+    bottom: 29.5%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -86,23 +86,56 @@
     pointer-events: none;
   }
 
+  .home-links {
+    margin-top: 36px;
+  }
+
+  .home-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-link:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all 0.5s ease;
+    transform-origin: left;
+}
+
+.home-link:hover:before {
+    width: 100%;
+    right: 0;
+}
   
-  .second-sequence {
+  .second-sequence, .third-sequence, .fourth-sequence {
     opacity: 0;
     transition: opacity 0.5s ease;
-    animation: fadeIn 0.5s ease 1.5s forwards;
+    animation: fadeInHome 0.5s ease 1.5s forwards;
+  }
+  .second-sequence {
+    animation: fadeInHome 0.5s ease 1.5s forwards;
   }
   
   .third-sequence {
-    opacity: 0;
-    transition: all 0.5s ease;
-    animation: fadeIn 0.5s ease 3s forwards;
+    animation: fadeInHome 0.5s ease 3s forwards;
+  }
+
+  .fourth-sequence {
+    animation: fadeInHome 0.5s ease 4.5s forwards;
   }
   
-  @keyframes fadeIn {
+  @keyframes fadeInHome {
     to {
       opacity: 1;
       pointer-events: all;
+      filter: blur(0px);
     }
   }
 
