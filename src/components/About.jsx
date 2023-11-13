@@ -1,10 +1,16 @@
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from "./Header";
 import '../styles/About.css';
 
 function About() {
+
+    
+
     return (
         <div className="about">
             <Header />
+            <div className='header-cover'></div>
             <section className="about-container">
                 <div className="about-body">
                     <section className="about-header">
