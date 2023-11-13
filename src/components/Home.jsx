@@ -52,7 +52,7 @@ function Home() {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       };
   
-      const timeoutId = setTimeout(scrollToBottom, 3500);
+      const timeoutId = setTimeout(scrollToBottom, 4000);
   
       return () => clearTimeout(timeoutId);
     }, []);
