@@ -72,7 +72,7 @@ function Home() {
             <span className='bottom-text-body second-sequence'>I work primarily with react.</span>
             <span className='bottom-text-body third-sequence'>Welcome to my portfolio :-)</span>
             <div className='bottom-text-body fourth-sequence home-links'>
-              <a className='home-link'>Email</a> | <a href='https://drive.google.com/file/d/1OZI3lyE0pU8JfYFhNrC_WS27ssrKd8G8/view' className='home-link'>Resume</a> | <a href='https://www.linkedin.com/in/connor-gilbert-21b3a3268/' className='home-link'>LinkedIn</a>
+              <a target="_blank" rel="noopener" href="mailto:connorgilbert77@gmail.com?subject=Hey%20Connor%20-%20Saw%20Your%20Portfolio" className='home-link'>Email</a> | <a target="_blank" rel="noopener" href='https://drive.google.com/file/d/1OZI3lyE0pU8JfYFhNrC_WS27ssrKd8G8/view' className='home-link'>Resume</a> | <a target="_blank" rel="noopener" href='https://www.linkedin.com/in/connor-gilbert-21b3a3268/' className='home-link'>LinkedIn</a>
             </div>
           </div>
         </div>
