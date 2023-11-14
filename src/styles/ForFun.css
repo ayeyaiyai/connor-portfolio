@@ -1,5 +1,27 @@
 .for-fun-container {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: white;
+}
+
+.for-fun-body {
+    width: 85%;
+    margin-top: 100px;
+    opacity: 0;
+    transform: rotateX(70deg);
+    animation: fadeIn 1.25s ease .25s forwards;
+}
+
+.title {
+    font-size: 11rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 50%;
+}
+
+.subtitle {
+    width: 50%;
+    font-size: 2.3rem;
 }

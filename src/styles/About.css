@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100%;
     background-color: white;
 }
@@ -21,7 +20,14 @@
     margin-top: 100px;
 }
 
-.about-body p {
+.info {
+    width: 100%;
+    opacity: 0;
+    transform: rotateX(70deg);
+    animation: fadeIn 1.25s ease .25s forwards;
+}
+
+.info-paragraph {
     font-size: 1.5rem;
 }
 
@@ -34,7 +40,7 @@
     animation: fadeIn 1.25s ease .25s forwards;
 }
 
-.about-title {
+.title {
     font-size: 11rem;
     font-weight: 700;
     opacity: 0;
@@ -58,18 +64,14 @@
     animation: fadeIn 1.25s ease 1.2s forwards;
 }
 
-.about-info {
-    width: 100%;
-    opacity: 0;
-    transform: rotateX(70deg);
-    animation: fadeIn 1.25s ease .25s forwards;
-}
-
 .section-divider {
     width: 100%;
     height: 1px;
     background-color: black;
-    margin-bottom: 32px;
+}
+
+.large {
+    font-size: 3rem;
 }
 
 @keyframes fadeIn {
