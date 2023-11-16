@@ -6,6 +6,11 @@
     background-color: white;
 }
 
+.works-container a {
+    color: black;
+    text-decoration: none;
+}
+
 .works-body {
     width: 85%;
     margin-top: 100px;
@@ -65,7 +70,7 @@
 }
 
 .grid-item-image {
-    background-color: white;
+    background-color: black;
     border: 1px solid black;
     height: 95%;
 }
@@ -110,4 +115,23 @@
 
 .work-grid-item:hover .title-text:before {
     width: 100%;
+}
+
+#where-in-the-world {
+    background-image: url(../images/country-api-thumbnail.PNG);
+}
+
+#archive {
+    background-image: url(../images/archive-thumbnail.PNG);
+    background-size: cover;
+}
+
+#weather-app {
+    background-image: url(../images/weather-app-thumbnail.PNG);
+    background-size: cover;
+}
+
+#cody-portfolio {
+    background-image: url(../images/codygilbert.PNG);
+    background-size: cover;
 }
