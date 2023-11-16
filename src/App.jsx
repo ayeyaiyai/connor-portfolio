@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Works from './components/Works'; 
 import About from './components/About';
 import ForFun from './components/ForFun';
+import WhereInTheWorld from './components/selected-works/WhereInTheWorld';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path='/work' element={<Works />} />
+          <Route path='/where-in-the-world' element={<WhereInTheWorld />} />
           <Route path='/about' element={<About />} />
           <Route path='/for-fun' element={<ForFun />} />
           <Route path='/' element={<Home />} />
