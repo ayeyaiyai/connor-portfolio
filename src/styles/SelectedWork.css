@@ -168,6 +168,86 @@
     right: 0;
 }
 
+#cody-portfolio-image {
+    background-image: url('../images/cody-portfolio-image.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+#archive-home-image {
+    background-image: url('../images/archive-home.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#weather-home-image {
+    background-image: url('../images/weather-home.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#country-home-image {
+    background-image: url('../images/country-api-home.png');
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .selected-work-body {
+        align-items: center;
+    }  
+
+    .selected-work-title {
+        font-size: 4rem;
+    }
+
+    .selected-work-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selected-work-image {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .selected-work-header-body {
+        width: 100%;
+        text-align: center;
+    }
+
+    .selected-work-body-cluster {
+        margin-bottom: 24px;
+    }
+
+    .selected-work-info {
+        flex-direction: column;
+    }
+
+    .selected-work-info-section {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .executive-summary-container {
+        height: auto;
+    }
+
+    .executive-summary-body {
+        flex-direction: column;
+    }
+
+    .executive-summary {
+        width: 100%;
+    }
+
+    .external-links-title {
+        text-align: center;
+    }
+}
+
 @media (min-width: 1600px) {
     .selected-work-body {
         width: 65%;

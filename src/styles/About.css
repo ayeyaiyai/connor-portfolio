@@ -108,7 +108,6 @@
     .about-image {
         width: 100%;
         height: auto;
-        transform: rotate(0deg);
         align-items: center;
         justify-content: center;
     }

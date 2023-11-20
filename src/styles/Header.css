@@ -60,8 +60,19 @@
     }
 
     .header-links, .header-name {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 400;
+    }
+
+    .header-links { 
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-link {
+        margin: 0;
+        justify-content: space-around;
     }
     
 }

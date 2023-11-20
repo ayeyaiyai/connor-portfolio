@@ -19,6 +19,15 @@
     animation: fadeIn 1.25s ease .25s forwards;
 }
 
+.works-title {
+    font-size: 11rem;
+    font-weight: 700;
+    opacity: 0;
+    animation: fadeIn 1.25s ease .25s forwards;
+    margin-bottom: 12px;
+    width: 50%;
+}
+
 .works-subtitle {
     width: 60%;
     font-size: 2.3rem;
@@ -118,22 +127,47 @@
 }
 
 #where-in-the-world {
-    background-image: url(../images/country-api-thumbnail.PNG);
+    background-image: url('../images/country-api-home.png');
+    background-position: center;
+    background-size: cover;
 }
 
 #archive {
-    background-image: url(../images/archive-thumbnail.PNG);
+    background-image: url('../images/archive-thumbnail.PNG');
     background-size: cover;
 }
 
 #weather-app {
-    background-image: url(../images/weather-app-thumbnail.PNG);
+    background-image: url('../images/weather-app-thumbnail.PNG');
     background-size: cover;
 }
 
 #cody-portfolio {
-    background-image: url(../images/codygilbert.PNG);
+    background-image: url('../images/codygilbert.PNG');
     background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .works-title {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .works-subtitle {
+        width: 100%;
+    }
+
+    .works-grid {
+        flex-direction: column;
+    }
+
+    .grid-column {
+        width: 100%;
+    }
+
+    #where-in-the-world-title {
+        font-size: 1.7rem;
+    }
 }
 
 @media (min-width: 1600px) {
