@@ -25,3 +25,9 @@
     width: 50%;
     font-size: 2.3rem;
 }
+
+@media (min-width: 1700px) {
+    .for-fun-body {
+        width: 65%;
+    }
+}

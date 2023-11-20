@@ -65,7 +65,7 @@
 }
 
 .work-grid-item {
-    margin-bottom: 12px;
+    margin-bottom: 36px;
     cursor: pointer;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .grid-item-short {
-    height: 450px;
+    height: 500px;
 }
 
 .grid-item-title {
@@ -134,4 +134,10 @@
 #cody-portfolio {
     background-image: url(../images/codygilbert.PNG);
     background-size: cover;
+}
+
+@media (min-width: 1600px) {
+    .works-body {
+        width: 65%;
+    }
 }

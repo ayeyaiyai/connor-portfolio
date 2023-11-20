@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     color: black;
+    background-color: white;
 }
 
 .selected-work-body {
@@ -13,6 +14,11 @@
     opacity: 0;
     transform: rotateX(70deg);
     animation: fadeIn 1.25s ease .25s forwards;
+}
+
+.selected-work-body a {
+    color: black;
+    text-decoration: none;
 }
 
 .selected-work-title {
@@ -60,21 +66,119 @@
 }
 
 .selected-work-info-section {
+    box-sizing: border-box;
     width: 47%;
-    height: 500px;
     border: 1px solid black;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.info-section-title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.info-section-subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.info-section-body {
+    font-size: 1.1rem;
 }
 
 .executive-summary-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 285px;
     background-color: rgba(0, 0, 0, 0.93);
+    box-sizing: border-box;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 32px;
 }
 
 .executive-summary-title {
     color: white;
-    font-size: 2.2rem;
+    font-size: 2.35rem;
+    margin-top: 42px;
+}
+
+.executive-summary-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.executive-summary {
+    width: 45%;
+    margin-top: 14px;
+}
+
+.executive-summary-body-title {
+    font-size: 3.5rem;
     font-weight: 700;
-    margin-left: 48px;
+    color: rgba(255, 255, 255, 0.233);
+}
+
+.executive-summary-subtitle {
+    color: white;
+    transform: translateX(14px) translateY(-24px);
+    z-index: 3;
+    font-weight: 500;
+}
+
+.external-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.external-links-title {
+    margin-top: 32px;
+    margin-bottom: 4px;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.external-link {
+    font-size: 2rem;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.external-link:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: all 0.5s ease;
+    transform-origin: left;
+}
+
+.external-link:hover:before {
+    width: 100%;
+    right: 0;
+}
+
+@media (min-width: 1600px) {
+    .selected-work-body {
+        width: 65%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .selected-work-image {
+        width: 65%;
+        border: 1px solid black;
+        height: 600px;
+        margin-right: 16px;
+    }
 }

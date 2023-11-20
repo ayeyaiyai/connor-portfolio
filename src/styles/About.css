@@ -40,7 +40,7 @@
     animation: fadeIn 1.25s ease .25s forwards;
 }
 
-.title {
+.about-title {
     font-size: 11rem;
     font-weight: 700;
     opacity: 0;
@@ -81,8 +81,61 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .about-title {
-        font-size: 6rem;
+        font-size: 8rem;
+    }
+
+    .about-image {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 4rem;
+        width: 100%;
     } 
+
+    .about-image {
+        width: 100%;
+        height: auto;
+        transform: rotate(0deg);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headshot {
+        margin: 0;
+    }
+
+    .info {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    .about-body {
+        width: 65%;
+    }
+
+    .about-title {
+        font-size: 12rem;
+    }
+
+    .info-paragraph {
+        font-size: 2.5rem;
+    }
+
+    .large {
+        font-size: 4rem;
+    }
 }
