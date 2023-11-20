@@ -11,14 +11,14 @@ function Works() {
             <div className="header-cover"></div>
             <section className="works-container">
                 <section className="works-body">
-                    <div className="title">Selected Works</div>
+                    <div className="works-title">Selected Works</div>
                     <div className="works-subtitle">These are just a few of the projects I've worked on recently. Check out more on my <a target="_blank" rel="noopener" href='https://github.com/ayeyaiyai'className="works-link">github!</a></div>
                     <section className="works-grid">
                         <div className="grid-column left-column">
                             <Link to='/where-in-the-world'>
                                 <div className="work-grid-item grid-item-tall">
                                     <div className="grid-item-image" id="where-in-the-world"></div>
-                                    <div className="grid-item-title"><span className="title-text">Where in the World?</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
+                                    <div className="grid-item-title"><span className="title-text" id='where-in-the-world-title'>Where in the World?</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
                                 </div>
                             </Link>
                             <Link to='/weather-app'>
