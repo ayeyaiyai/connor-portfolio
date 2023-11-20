@@ -11,7 +11,7 @@ function About() {
             <section className="about-container">
                 <div className="about-body">
                     <section className="about-header">
-                        <div className="title">About Me</div>
+                        <div className="about-title">About Me</div>
                         <div className="about-image"><img src={headshot} alt="head shot" className="headshot"/></div>
                     </section>
                     <section className="info">
@@ -20,7 +20,7 @@ function About() {
                     </section>
                     <div className="section-divider"></div>
                     <section className="info">
-                        <p className="info-paragraph large">Working with me will ensure you are working with someone that is committed to your success. I pride myself on my attention to detail and my ability to replicate design templates.</p>
+                        <p className="info-paragraph large">Working with me will ensure you are working with someone that is committed to your company's success. I pride myself on my attention to detail and my ability to replicate design templates.</p>
                     </section>
                 </div>
             </section>

@@ -21,21 +21,26 @@ function Works() {
                                     <div className="grid-item-title"><span className="title-text">Where in the World?</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
                                 </div>
                             </Link>
-
-                            <div className="work-grid-item grid-item-short">
-                                <div className="grid-item-image" id="weather-app"></div>
-                                <div className="grid-item-title"><span className="title-text">Weather App</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
-                            </div>
+                            <Link to='/weather-app'>
+                                <div className="work-grid-item grid-item-short">
+                                    <div className="grid-item-image" id="weather-app"></div>
+                                    <div className="grid-item-title"><span className="title-text">Weather App</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
+                                </div>
+                            </Link>
                         </div>
                         <div className="grid-column right-column">
-                            <div className="work-grid-item grid-item-short">
-                                <div className="grid-item-image" id="archive"></div>
-                                <div className="grid-item-title"><span className="title-text">Archive</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
-                            </div>
-                            <div className="work-grid-item grid-item-tall">
-                                <div className="grid-item-image"id="cody-portfolio"></div>
-                                <div className="grid-item-title"><span className="title-text">Cody's Portfolio</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
-                            </div>
+                            <Link to='/archive'>
+                                <div className="work-grid-item grid-item-short">
+                                    <div className="grid-item-image" id="archive"></div>
+                                    <div className="grid-item-title"><span className="title-text">Online Shop</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
+                                </div>
+                            </Link>
+                            <Link to='/cody-portfolio'>
+                                <div className="work-grid-item grid-item-tall">
+                                    <div className="grid-item-image"id="cody-portfolio"></div>
+                                    <div className="grid-item-title"><span className="title-text">Cody's Portfolio</span><img src={rightArrow} alt='arrow icon' className="arrow-icon"/></div>
+                                </div>
+                            </Link>
                         </div>
                     </section>
                 </section>
