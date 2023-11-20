@@ -11,7 +11,7 @@ function Archive() {
                     <section className="selected-work-title">Archive</section>
                     <div className="section-divider"></div>
                     <section className="selected-work-header">
-                        <div className="selected-work-image"></div>
+                        <div className="selected-work-image" id="archive-home-image"></div>
                         <div className="selected-work-header-body">
                             <div className="selected-work-body-cluster">
                                 <span className="selected-work-header-top">Date</span>

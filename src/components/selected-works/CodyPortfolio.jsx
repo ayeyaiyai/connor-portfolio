@@ -11,7 +11,7 @@ function CodyPortfolio() {
                     <section className="selected-work-title">Cody's Portfolio</section>
                     <div className="section-divider"></div>
                     <section className="selected-work-header">
-                        <div className="selected-work-image"></div>
+                        <div className="selected-work-image" id='cody-portfolio-image'></div>
                         <div className="selected-work-header-body">
                             <div className="selected-work-body-cluster">
                                 <span className="selected-work-header-top">Date</span>
