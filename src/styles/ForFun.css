@@ -26,6 +26,10 @@
     font-size: 2.3rem;
 }
 
+.for-fun-section-title {
+    font-size: 3rem;
+}
+
 @media (min-width: 1700px) {
     .for-fun-body {
         width: 65%;
